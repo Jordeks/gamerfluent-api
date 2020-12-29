@@ -1,3 +1,7 @@
 class BlogSerializer < ActiveModel::Serializer
-  attributes :id, :title, :content
+  attributes :id, :title, :content, :username
+
+  def username
+    object.user.username
+  end
 end
