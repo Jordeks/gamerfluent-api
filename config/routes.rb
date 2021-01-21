@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       post '/login', to: 'sessions#create'
       get '/auto_login', to: 'sessions#auto_login'
       get '/user_is_authed', to: 'sessions#user_is_authed'
+      get '/session_user_blogs', to: 'blogs#session_user_blogs'
       resources :blogs
       resources :users, only: [:create]
     end

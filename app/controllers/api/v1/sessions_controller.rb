@@ -18,5 +18,13 @@ class Api::V1::SessionsController < ApplicationController
       render json: { errors: "No User Logged In"}
     end
   end
+
+  # def get_session_user
+  #   if session_user
+  #     render json: session_user
+  #   else
+  #     render json: { errors: "No User Logged In"}
+  #   end
+  # end
   
 end
